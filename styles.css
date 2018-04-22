@@ -1,0 +1,186 @@
+/* GENERAL */ 
+	body { 
+		margin: 0px; /* Enlever les espaces potentiels du body, margin + padding pour prévenir certains browser*/
+		padding: 0px; 
+		font: 1em "Trebuchet MS";	} 
+	
+	@font-face {
+    font-family: 'visitor_tt2_brkregular';
+    src: url('media/fonts/visitor2wf.eot');
+    src: url('media/fonts/visitor2wf.eot?#iefix') format('embedded-opentype'),
+         url('media/fonts/visitor2wf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;	}
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+}
+
+	a { text-decoration :none;}
+
+	.nofloat { clear: both;}
+	
+	body {
+    text-align: center;
+    min-width: 680px;
+    background: url(media/img/bg.jpg);
+	}
+
+
+	div#game { 
+		display: inline-block;
+ 		text-align: center;
+		margin: auto; }
+
+/* JEU */ 
+	#grid {
+		line-height: 0em;
+		display: inline-block;
+		background: #333;
+		padding: 3px;
+		margin: 4px auto;
+	}
+	#options{
+		text-align: left;
+		color: #fff;
+		display: block;
+		font: 1.2em 'visitor_tt2_brkregular'; }
+	#options img {
+		vertical-align: middle;}
+	.Radio{
+		text-align: left;}
+	.Radio input {
+		margin-right: 10px;	}
+	.Radio ul {
+		font: 1.3em 'visitor_tt2_brkregular'; 
+		list-style-type:none;	}
+	#imgDroit, #imgGauche{
+		vertical-align: -0.5em;
+		margin: 2px;}
+	#square .cell:hover{
+		transform: scale(1.15); 
+		border: 2px solid rgba(255,255,255,1);
+		width: 24px;
+		height: 24px;
+	}
+	#messageGauche{
+		text-align: left;
+		float: left;
+		margin-left: 1px;
+		margin-top: 3px;
+		display: block;
+		min-width: 245px;
+		padding: 3px;	}
+
+	#lblMessage{
+		margin: 4px;	}
+	#lblMessage2{
+		margin: 4px;	}
+	.bouton{
+		font: 1.7em 'visitor_tt2_brkregular';
+		color: #fff;
+		margin: 1px 1px 3px;
+		line-height: 1.2em;
+		padding-bottom: 3px;
+		display: block;
+		background-color: #6a6;
+		text-align: center;}
+	.bouton:hover{
+		background: #7ccc04;
+		cursor: pointer; }
+	#chronotime {
+		font: 2em 'visitor_tt2_brkregular';
+		color: #fff;
+		margin: 1px 1px 3px;
+		line-height: 1.2em;
+		padding-bottom: 3px;text-align: center;
+	}
+
+	.leaderboard {
+		font: 1.4em 'visitor_tt2_brkregular';
+		border-collapse: collapse;
+		display: inline-block;
+		width: 289px;
+		margin: 10px 0;
+		padding: 3px;
+		background: #333;
+	}
+	caption {
+		color: #fff;
+	}
+	.leaderboard tr { 
+		display: block;
+		width: 100%;
+		margin: 2px auto;
+		background : #888;
+	}
+	.leaderboard tr:nth-child(even) { background: #666; }
+
+	.leaderboard td, th{
+		display: inline-block;
+		color: #fff;
+	}
+	.leaderboard tr td:first-child{
+		width: 130px;
+		padding-left: 12px;
+		text-align: left;
+	}
+	.leaderboard tr td:nth-child(2){
+		text-align: right;
+		padding-right: 12px;
+		width: 118px;
+	}
+	form { text-align: center; display: block width: 100%;}
+
+	ul {
+		font: 1.4em 'visitor_tt2_brkregular';
+		border-collapse: collapse;
+		display: block;
+		clear: both;
+		width: 289px;
+		margin: 10px auto;
+		padding: 3px;
+		background: #333;
+		text-align: center;
+	}
+
+	ul li {
+		width: 92px;
+		float: left;
+		margin: 0 2px 0 2px;
+		color: #fff;
+		background: #666;
+		cursor: pointer;
+	}
+	ul li:hover {
+		background: #888;
+	}
+
+	h2 {
+		font: 1.1em 'visitor_tt2_brkregular';
+		text-align: center;
+		margin: 0 0 4px;
+		color: #fff;
+	}
+	h1 {
+		font: 3em 'visitor_tt2_brkregular';
+		text-align: center;
+		margin: 0 0 4px;
+		color: #fff;
+	}
